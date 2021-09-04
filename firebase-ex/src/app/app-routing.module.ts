@@ -5,12 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    component: HomeComponent,
+    component: HomeComponent, // * this page is for once the user has already authenticated
     path:'home'
   },
   {
-    component: AuthComponent,
-    path:'auth'
+    component: AuthComponent, // * this is landing, we will prompt the user to authenticate
+    path:'auth' 
   }
 ];
 
