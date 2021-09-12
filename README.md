@@ -11,6 +11,8 @@ Once they enter in this information, they are taken `/home` where their favorite
 
 The project already has a firebase environment setup. 
 
+Look around online if you want/are confused, just cite anything you use from online
+
 ## Next Steps
 
 1. Add a food html prompt (copy from the other two -- email + password)
