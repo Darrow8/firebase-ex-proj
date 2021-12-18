@@ -13,20 +13,20 @@ export class AppComponent implements OnInit {
   }
 
   async ngOnInit() {
-    // console.log('we are initializing!')
-    // this.authSerivce.coolVar
-    await this.someFunc()
-    await this.afa.signInWithEmailAndPassword('darrow@doceo.com', '12345').then(() => {
-      // * if we are here then the user's account has been created
-      // write code to access the firebase database and make a document with the user's favorite food
+  //   // console.log('we are initializing!')
+  //   // this.authSerivce.coolVar
+  //   await this.someFunc()
+  //   await this.afa.signInWithEmailAndPassword('darrow@doceo.com', '12345').then(() => {
+  //     // * if we are here then the user's account has been created
+  //     // write code to access the firebase database and make a document with the user's favorite food
 
 
-      // this.afa.authState.subscribe((user) => {
-      //   console.log(user)
-      // })
-    }).catch((err) => {
-      console.log(err)
-    })
+  //     // this.afa.authState.subscribe((user) => {
+  //     //   console.log(user)
+  //     // })
+  //   }).catch((err) => {
+  //     console.log(err)
+  //   })
 
   }
 

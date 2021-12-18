@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-example-project-d0dc5": {
+      "hosting": {
+        "firebase-ex": [
+          "fir-example-project-d0dc5"
+        ]
+      }
+    }
+  }
+}

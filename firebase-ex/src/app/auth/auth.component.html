@@ -1,19 +1,22 @@
 <h2>Super Simple Login Form</h2>
 <!-- * copied from https://www.w3schools.com/howto/howto_css_login_form.asp -->
-<!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
 <div id="id01" class="modal">
   
   <form class="modal-content animate">
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="uname"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="Email" [(ngModel)]="this.email" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="this.password" required>
+
+      <label for="food"><b>Food</b></label>
+      <input type="text" placeholder="Enter Favorite Food" name="food" [(ngModel)]="this.food" required>
         
-      <button type="submit">Login</button>
+      <button (click)="this.signin()" type="submit">Login</button>
 
     </div>
 
@@ -21,6 +24,6 @@
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     </div>
   </form>
-</div> -->
+</div>
 
-Favorite Color: <input type="text" [(ngModel)]="favoriteColor">
+<!-- Favorite Color: <input type="text" [(ngModel)]="favoriteColor"> -->
