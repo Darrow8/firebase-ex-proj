@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { AngularFireAuth } from '@angular/fire/auth';
-import { initializeApp } from "firebase/app"
-import { getFirestore } from "firebase/firestore"
-import { collection, addDoc } from "firebase/firestore"
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+// import { initializeApp } from "firebase/app"
+// import { getFirestore } from "firebase/firestore"
+// import { collection, addDoc } from "firebase/firestore"
 import { Router } from '@angular/router';
-import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { User } from '@firebase/auth';
 
 export interface info { food: string; email: string; }
@@ -28,22 +28,26 @@ export class AuthComponent implements OnInit {
   }
 
   signin() {
-    this.afa.signInWithEmailAndPassword(this.email, this.password)
-    .then((userCredential) => {
-      // Signed in 
-      const user = userCredential.user;
-      // firestore
-      this.afs.collection<info>('Users').add({food: this.food, email: this.email});
-      // this.router.navigate(['/secure']);
 
-      // Hint: use .where()
-      // ^^
-      // Figure out how to match id with the FireStore document id
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-    });
+    // * commented code
+    // this.afa.signInWithEmailAndPassword(this.email, this.password)
+    // .then((userCredential) => {
+    //   // Signed in 
+    //   const user = userCredential.user;
+    //   // firestore
+    //   this.afs.collection<info>('Users').add({food: this.food, email: this.email});
+    //   // this.router.navigate(['/secure']);
+
+    //   // Hint: use .where()
+    //   // ^^
+    //   // Figure out how to match id with the FireStore document id
+    // })
+    // .catch((error) => {
+    //   const errorCode = error.code;
+    //   const errorMessage = error.message;
+    // });
+
+
 
     // try {
     //   const docRef = await addDoc(collection(db, "food"), {

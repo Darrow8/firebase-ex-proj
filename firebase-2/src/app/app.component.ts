@@ -1,6 +1,6 @@
 import { AuthServiceService } from './auth-service.service';
 import { Component, OnInit } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
